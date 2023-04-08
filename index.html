@@ -1,0 +1,28 @@
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <label class="picture" for="picture_input" tabIndex="0">
+            <span class="picture_image"><canvas id="myCanvas"></canvas></span>
+        </label>
+        <input type="file" name="picture_input" id="picture_input">
+    </section>
+
+    <section class="controls">
+        <label for="cor">Cor</label><input type="range" id="cor" max="360" value="0" oninput="aplicFilter()">
+        <label for="saturacao">Saturação</label><input type="range" id="saturacao" value="100" max="180" oninput="aplicFilter()">
+        <label for="brilho">brilho</label><input type="range" id="brilho" max="1000" value="100" oninput="aplicFilter()"></label>
+        <label for="contraste">Contraste</label><input type="range" id="contraste" max="360" value="100" oninput="aplicFilter()">
+
+</body>
+<script src="script.js"></script>
+
+</html>
